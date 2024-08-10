@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.gallery-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.gallery-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    overflow: hidden; /* Hides overflowing images */
+}
+
+.gallery-wrapper {
+    width: 100%;
+    overflow: hidden; /* Ensures gallery doesn't overflow its container */
+}
+
+.gallery {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.gallery-item {
+    flex-shrink: 0;
+    width: 100%; /* Ensure each image takes full width */
+    height: 400px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+}
+
+.controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
